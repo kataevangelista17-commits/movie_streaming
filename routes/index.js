@@ -10,7 +10,7 @@ router.get('/users', userController.getAllUsers);
 router.get('/users/:id', userController.getUserById);
 
 // Search by genre (avoid conflict with :id)
-router.get('/users/genre/:genre', userController.getUserByGender);
+router.get('/users/genre/:genre', userController.getUserByGenre);
 
 // Create new record
 router.post('/users', userController.createUser);
